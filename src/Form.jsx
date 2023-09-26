@@ -9,6 +9,13 @@ const Form = () => {
       <h4>color generator</h4>
       <form onSubmit={handleSubmit} className="color-form">
         <input
+          type="color"
+          value={color}
+          onChange={(e) => {
+            setColor(e.target.value);
+          }}
+        />
+        <input
           type="text"
           value={color}
           placeholder="#f15025"
