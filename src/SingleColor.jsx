@@ -1,5 +1,4 @@
 const SingleColor = ({ color, index }) => {
-  console.log(color, index);
   const { weight, hex } = color;
 
   return (
